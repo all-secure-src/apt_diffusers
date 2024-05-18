@@ -46,6 +46,7 @@ if is_torch_available():
     _import_structure["unets.unet_3d_condition"] = ["UNet3DConditionModel"]
     _import_structure["unets.unet_i2vgen_xl"] = ["I2VGenXLUNet"]
     _import_structure["unets.unet_kandinsky3"] = ["Kandinsky3UNet"]
+    _import_structure["unets.unet_omegapicasso2"] = ["OmegaPicasso2UNet"]
     _import_structure["unets.unet_motion_model"] = ["MotionAdapter", "UNetMotionModel"]
     _import_structure["unets.unet_spatio_temporal_condition"] = ["UNetSpatioTemporalConditionModel"]
     _import_structure["unets.unet_stable_cascade"] = ["StableCascadeUNet"]
@@ -82,6 +83,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
         from .unets import (
             I2VGenXLUNet,
             Kandinsky3UNet,
+            OmegaPicasso2UNet,
             MotionAdapter,
             StableCascadeUNet,
             UNet1DModel,

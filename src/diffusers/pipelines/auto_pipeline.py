@@ -44,6 +44,7 @@ from .kandinsky2_2 import (
     KandinskyV22Pipeline,
 )
 from .kandinsky3 import Kandinsky3Img2ImgPipeline, Kandinsky3Pipeline
+from .omegapicasso2 import OmegaPicasso2Img2ImgPipeline, OmegaPicasso2Pipeline
 from .omegapicasso import (
     OmegaPicassoCombinedPipeline,
     OmegaPicassoImg2ImgCombinedPipeline,
@@ -80,6 +81,7 @@ AUTO_TEXT2IMAGE_PIPELINES_MAPPING = OrderedDict(
         ("kandinsky", KandinskyCombinedPipeline),
         ("kandinsky22", KandinskyV22CombinedPipeline),
         ("kandinsky3", Kandinsky3Pipeline),
+        ("omegapicasso2", OmegaPicasso2Pipeline),
         ("omegapicasso", OmegaPicassoCombinedPipeline),
         ("stable-diffusion-controlnet", StableDiffusionControlNetPipeline),
         ("stable-diffusion-xl-controlnet", StableDiffusionXLControlNetPipeline),
@@ -99,6 +101,7 @@ AUTO_IMAGE2IMAGE_PIPELINES_MAPPING = OrderedDict(
         ("kandinsky", KandinskyImg2ImgCombinedPipeline),
         ("kandinsky22", KandinskyV22Img2ImgCombinedPipeline),
         ("kandinsky3", Kandinsky3Img2ImgPipeline),
+        ("omegapicasso2", OmegaPicasso2Img2ImgPipeline),
         ("omegapicasso", OmegaPicassoImg2ImgCombinedPipeline),
         ("stable-diffusion-controlnet", StableDiffusionControlNetImg2ImgPipeline),
         ("stable-diffusion-xl-controlnet", StableDiffusionXLControlNetImg2ImgPipeline),

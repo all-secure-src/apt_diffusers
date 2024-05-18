@@ -8,6 +8,7 @@ if is_torch_available():
     from .unet_3d_condition import UNet3DConditionModel
     from .unet_i2vgen_xl import I2VGenXLUNet
     from .unet_kandinsky3 import Kandinsky3UNet
+    from .unet_omegapicasso2 import OmegaPicasso2UNet
     from .unet_motion_model import MotionAdapter, UNetMotionModel
     from .unet_spatio_temporal_condition import UNetSpatioTemporalConditionModel
     from .unet_stable_cascade import StableCascadeUNet

@@ -174,6 +174,10 @@ else:
         "Kandinsky3Img2ImgPipeline",
         "Kandinsky3Pipeline",
     ]
+    _import_structure["omegapicasso2"] = [
+        "OmegaPicasso2Img2ImgPipeline",
+        "OmegaPicasso2Pipeline",
+    ]
     _import_structure["omegapicasso"] = [
         "OmegaPicassoCombinedPipeline",
         "OmegaPicassoControlnetImg2ImgPipeline",
@@ -453,6 +457,10 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
         from .kandinsky3 import (
             Kandinsky3Img2ImgPipeline,
             Kandinsky3Pipeline,
+        )
+        from .omegapicasso2 import (
+            OmegaPicasso2Img2ImgPipeline,
+            OmegaPicasso2Pipeline,
         )
         from .omegapicasso import (
             OmegaPicassoCombinedPipeline,
