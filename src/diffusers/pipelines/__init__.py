@@ -174,6 +174,18 @@ else:
         "Kandinsky3Img2ImgPipeline",
         "Kandinsky3Pipeline",
     ]
+    _import_structure["omegapicasso"] = [
+        "OmegaPicassoCombinedPipeline",
+        "OmegaPicassoControlnetImg2ImgPipeline",
+        "OmegaPicassoControlnetPipeline",
+        "OmegaPicassoImg2ImgCombinedPipeline",
+        "OmegaPicassoImg2ImgPipeline",
+        "OmegaPicassoInpaintCombinedPipeline",
+        "OmegaPicassoInpaintPipeline",
+        "OmegaPicassoPipeline",
+        "OmegaPicassoBaselineEmb2EmbPipeline",
+        "OmegaPicassoBaselinePipeline",
+    ]
     _import_structure["latent_consistency_models"] = [
         "LatentConsistencyModelImg2ImgPipeline",
         "LatentConsistencyModelPipeline",
@@ -436,6 +448,18 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
         from .kandinsky3 import (
             Kandinsky3Img2ImgPipeline,
             Kandinsky3Pipeline,
+        )
+        from .omegapicasso import (
+            OmegaPicassoCombinedPipeline,
+            OmegaPicassoControlnetImg2ImgPipeline,
+            OmegaPicassoControlnetPipeline,
+            OmegaPicassoImg2ImgCombinedPipeline,
+            OmegaPicassoImg2ImgPipeline,
+            OmegaPicassoInpaintCombinedPipeline,
+            OmegaPicassoInpaintPipeline,
+            OmegaPicassoPipeline,
+            OmegaPicassoBaselineEmb2EmbPipeline,
+            OmegaPicassoBaselinePipeline,
         )
         from .latent_consistency_models import (
             LatentConsistencyModelImg2ImgPipeline,
