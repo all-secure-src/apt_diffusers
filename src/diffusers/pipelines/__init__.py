@@ -228,22 +228,20 @@ else:
             "StableDiffusionLDM3DPipeline",
         ]
     )
-    _import_structure["omegaspectra"].extend(
-        [
-            "CLIPImageProjection",
-            "StableDiffusionDepth2ImgPipeline",
-            "StableDiffusionImageVariationPipeline",
-            "StableDiffusionImg2ImgPipeline",
-            "StableDiffusionInpaintPipeline",
-            "StableDiffusionInstructPix2PixPipeline",
-            "StableDiffusionLatentUpscalePipeline",
-            "OmegaSpectraPipeline",
-            "StableDiffusionUpscalePipeline",
-            "StableUnCLIPImg2ImgPipeline",
-            "StableUnCLIPPipeline",
-            "StableDiffusionLDM3DPipeline",
-        ]
-    )
+    _import_structure["omegaspectra"] = [
+        "CLIPImageProjection",
+        "StableDiffusionDepth2ImgPipeline",
+        "StableDiffusionImageVariationPipeline",
+        "StableDiffusionImg2ImgPipeline",
+        "StableDiffusionInpaintPipeline",
+        "StableDiffusionInstructPix2PixPipeline",
+        "StableDiffusionLatentUpscalePipeline",
+        "OmegaSpectraPipeline",
+        "StableDiffusionUpscalePipeline",
+        "StableUnCLIPImg2ImgPipeline",
+        "StableUnCLIPPipeline",
+        "StableDiffusionLDM3DPipeline",
+    ]
     _import_structure["stable_diffusion_attend_and_excite"] = ["StableDiffusionAttendAndExcitePipeline"]
     _import_structure["stable_diffusion_safe"] = ["StableDiffusionPipelineSafe"]
     _import_structure["stable_diffusion_sag"] = ["StableDiffusionSAGPipeline"]
