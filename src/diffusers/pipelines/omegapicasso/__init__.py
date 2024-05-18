@@ -31,8 +31,8 @@ else:
     _import_structure["pipeline_omegapicasso_controlnet_img2img"] = ["OmegaPicassoControlnetImg2ImgPipeline"]
     _import_structure["pipeline_omegapicasso_img2img"] = ["OmegaPicassoImg2ImgPipeline"]
     _import_structure["pipeline_omegapicasso_inpainting"] = ["OmegaPicassoInpaintPipeline"]
-    _import_structure["pipeline_omegapicasso_prior"] = ["OmegaPicassoBaselinePipeline"]
-    _import_structure["pipeline_omegapicasso_prior_emb2emb"] = ["OmegaPicassoBaselineEmb2EmbPipeline"]
+    _import_structure["pipeline_omegapicasso_baseline"] = ["OmegaPicassoBaselinePipeline"]
+    _import_structure["pipeline_omegapicasso_baseline_emb2emb"] = ["OmegaPicassoBaselineEmb2EmbPipeline"]
 
 
 if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
@@ -53,8 +53,8 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
         from .pipeline_omegapicasso_controlnet_img2img import OmegaPicassoControlnetImg2ImgPipeline
         from .pipeline_omegapicasso_img2img import OmegaPicassoImg2ImgPipeline
         from .pipeline_omegapicasso_inpainting import OmegaPicassoInpaintPipeline
-        from .pipeline_omegapicasso_prior import OmegaPicassoBaselinePipeline
-        from .pipeline_omegapicasso_prior_emb2emb import OmegaPicassoBaselineEmb2EmbPipeline
+        from .pipeline_omegapicasso_baseline import OmegaPicassoBaselinePipeline
+        from .pipeline_omegapicasso_baseline_emb2emb import OmegaPicassoBaselineEmb2EmbPipeline
 
 else:
     import sys
