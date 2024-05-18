@@ -21,6 +21,7 @@ ALWAYS_TEST_PIPELINE_MODULES = [
     "kandinsky",
     "kandinsky2_2",
     "omegapicasso",
+    "omega_spectra",
     "text_to_video_synthesis",
     "wuerstchen",
 ]

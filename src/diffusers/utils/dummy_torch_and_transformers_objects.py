@@ -1306,7 +1306,6 @@ class StableDiffusionParadigmsPipeline(metaclass=DummyObject):
     def from_pretrained(cls, *args, **kwargs):
         requires_backends(cls, ["torch", "transformers"])
 
-
 class StableDiffusionPipeline(metaclass=DummyObject):
     _backends = ["torch", "transformers"]
 
@@ -1320,7 +1319,6 @@ class StableDiffusionPipeline(metaclass=DummyObject):
     @classmethod
     def from_pretrained(cls, *args, **kwargs):
         requires_backends(cls, ["torch", "transformers"])
-
 
 class StableDiffusionPipelineSafe(metaclass=DummyObject):
     _backends = ["torch", "transformers"]
@@ -1561,6 +1559,19 @@ class StableVideoDiffusionPipeline(metaclass=DummyObject):
     def from_pretrained(cls, *args, **kwargs):
         requires_backends(cls, ["torch", "transformers"])
 
+class OmegaSpectraPipeline(metaclass=DummyObject):
+    _backends = ["torch", "transformers"]
+
+    def __init__(self, *args, **kwargs):
+        requires_backends(self, ["torch", "transformers"])
+
+    @classmethod
+    def from_config(cls, *args, **kwargs):
+        requires_backends(cls, ["torch", "transformers"])
+
+    @classmethod
+    def from_pretrained(cls, *args, **kwargs):
+        requires_backends(cls, ["torch", "transformers"])
 
 class TextToVideoSDPipeline(metaclass=DummyObject):
     _backends = ["torch", "transformers"]
