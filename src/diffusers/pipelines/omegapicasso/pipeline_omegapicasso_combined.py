@@ -11,7 +11,7 @@ from ..pipeline_utils import DiffusionPipeline
 from .pipeline_omegapicasso import OmegaPicassoPipeline
 from .pipeline_omegapicasso_img2img import OmegaPicassoImg2ImgPipeline
 from .pipeline_omegapicasso_inpainting import OmegaPicassoInpaintPipeline
-from .pipeline_omegapicasso_baseline import OmegaPicassoBaselinePipeline
+from .pipeline_omegapicasso_prior import OmegaPicassoBaselinePipeline
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
