@@ -521,7 +521,17 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             StableUnCLIPPipeline,
         )
         from .omegaspectra import (
+            CLIPImageProjection,
+            StableDiffusionDepth2ImgPipeline,
+            StableDiffusionImageVariationPipeline,
+            StableDiffusionImg2ImgPipeline,
+            StableDiffusionInpaintPipeline,
+            StableDiffusionInstructPix2PixPipeline,
+            StableDiffusionLatentUpscalePipeline,
             OmegaSpectraPipeline,
+            StableDiffusionUpscalePipeline,
+            StableUnCLIPImg2ImgPipeline,
+            StableUnCLIPPipeline,
         )
         from .stable_diffusion_attend_and_excite import StableDiffusionAttendAndExcitePipeline
         from .stable_diffusion_diffedit import StableDiffusionDiffEditPipeline

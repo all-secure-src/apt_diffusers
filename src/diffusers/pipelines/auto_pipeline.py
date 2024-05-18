@@ -67,6 +67,8 @@ from .stable_diffusion_xl import (
     StableDiffusionXLPipeline,
 )
 from .omegaspectra import (
+    StableDiffusionImg2ImgPipeline,
+    StableDiffusionInpaintPipeline,
     OmegaSpectraPipeline,
 )
 from .wuerstchen import WuerstchenCombinedPipeline, WuerstchenDecoderPipeline
