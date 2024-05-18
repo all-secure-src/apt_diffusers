@@ -224,7 +224,7 @@ else:
             "StableDiffusionLDM3DPipeline",
         ]
     )
-    _import_structure["omega_spectra"].extend(
+    _import_structure["omegaspectra"].extend(
         [
             "OmegaSpectraPipeline",
         ]
@@ -501,7 +501,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             StableUnCLIPImg2ImgPipeline,
             StableUnCLIPPipeline,
         )
-        from .omega_spectra import (
+        from .omegaspectra import (
             OmegaSpectraPipeline,
         )
         from .stable_diffusion_attend_and_excite import StableDiffusionAttendAndExcitePipeline

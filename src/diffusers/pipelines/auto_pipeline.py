@@ -65,7 +65,7 @@ from .stable_diffusion_xl import (
     StableDiffusionXLInpaintPipeline,
     StableDiffusionXLPipeline,
 )
-from .omega_spectra import (
+from .omegaspectra import (
     OmegaSpectraPipeline,
 )
 from .wuerstchen import WuerstchenCombinedPipeline, WuerstchenDecoderPipeline
@@ -75,7 +75,7 @@ AUTO_TEXT2IMAGE_PIPELINES_MAPPING = OrderedDict(
     [
         ("stable-diffusion", StableDiffusionPipeline),
         ("stable-diffusion-xl", StableDiffusionXLPipeline),
-        ("omega_spectra", OmegaSpectraPipeline),
+        ("omegaspectra", OmegaSpectraPipeline),
         ("if", IFPipeline),
         ("kandinsky", KandinskyCombinedPipeline),
         ("kandinsky22", KandinskyV22CombinedPipeline),
