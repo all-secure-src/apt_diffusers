@@ -20,6 +20,7 @@ ALWAYS_TEST_PIPELINE_MODULES = [
     "ip_adapters",
     "kandinsky",
     "kandinsky2_2",
+    "omegapicasso",
     "text_to_video_synthesis",
     "wuerstchen",
 ]
