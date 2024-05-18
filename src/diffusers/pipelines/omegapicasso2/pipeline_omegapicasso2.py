@@ -4,7 +4,7 @@ import torch
 from transformers import T5EncoderModel, T5Tokenizer
 
 from ...loaders import LoraLoaderMixin
-from ...models import Kandinsky3UNet, VQModel
+from ...models import OmegaPicasso2UNet, VQModel
 from ...schedulers import DDPMScheduler
 from ...utils import (
     deprecate,
@@ -47,7 +47,7 @@ def downscale_height_and_width(height, width, scale_factor=8):
     return new_height * scale_factor, new_width * scale_factor
 
 
-class Kandinsky3Pipeline(DiffusionPipeline, LoraLoaderMixin):
+class OmegaPicasso2Pipeline(DiffusionPipeline, LoraLoaderMixin):
     model_cpu_offload_seq = "text_encoder->unet->movq"
     _callback_tensor_inputs = [
         "latents",
@@ -61,7 +61,7 @@ class Kandinsky3Pipeline(DiffusionPipeline, LoraLoaderMixin):
         self,
         tokenizer: T5Tokenizer,
         text_encoder: T5EncoderModel,
-        unet: Kandinsky3UNet,
+        unet: OmegaPicasso2UNet,
         scheduler: DDPMScheduler,
         movq: VQModel,
     ):
